@@ -1,0 +1,131 @@
+body{
+    background-color: rgb(26, 23, 23);
+}
+
+.container{
+    background-color: rgb(67, 67, 82);
+    margin-left:480px;
+    margin-top:100px;
+    display: block;
+    height: 400px;
+    width: 350px;
+    border-radius: 50px;
+    padding:20px;
+
+}
+
+.starLogo{
+    position: top left;
+    background-color: rgb(76, 76, 78);
+    width:60px;
+    height: 60px;
+    border-radius: 100px;
+    background-image: url(images/icon-star.svg);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+}
+
+.text{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   color: aliceblue;
+}
+
+.rates{
+    display: flex;
+    justify-content: space-between;
+    margin-top:10px;
+}
+
+.one, .two , .three, .four, .five{
+    width:80px;
+    height: 60px;
+    background-color: rgb(38, 38, 39);
+    border-radius: 150px;
+    margin:5px;
+    padding: 2px;
+    text-align: center;
+    color: rgb(119, 119, 136);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.one:hover, .two:hover , .three:hover, .four:hover, .five:hover{
+    background-color: rgb(175, 175, 187);
+}
+
+input{
+    margin-top: 50px;
+    width: 350px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: white;
+    position: center;
+    color: rgb(240, 104, 13);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border:none;
+   cursor: pointer;
+   
+}
+
+input:hover{
+    background-color: rgb(240, 104, 13);
+    color:beige;
+    font-size:105%;
+    transition: all 0.15s ease-in-out;
+}
+
+
+
+ /* thanks container */
+
+
+ .containerThank{
+    background-color: rgb(67, 67, 82);
+    margin-left:480px;
+    margin-top:100px;
+ 
+    height: 400px;
+    width: 350px;
+    border-radius: 50px;
+    padding:20px;
+    display:none ;
+}
+
+.ThanksLogo{
+    position: top ;
+    margin-left: 95px;
+    width:150px;
+    height: 150px;
+    border-radius: 100px;
+    background-image: url(images/illustration-thank-you.svg);
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: center;
+}
+
+.textThank{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   color: aliceblue;
+}
+
+.textThank {
+   text-align: center;
+}
+
+#NbrStar{
+    width: 300px;
+    margin-left:25px;
+    height: 30px;
+    text-align: center;
+    padding:5px;
+    border-radius: 20px;
+    background-color: rgb(102, 100, 100);
+    position: center;
+    color: rgb(240, 104, 13);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border:none;
+
+}

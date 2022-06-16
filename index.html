@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="Style.css"> 
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+ 
+</head>
+<body>
+
+ <div class="container" id="container1">
+   <div class="starLogo"> </div>
+   <div class="text">
+    <p>
+      <h1> How did we do ?</h1>
+       Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering !
+    </p>
+   </div>
+   
+   <div class="rates">
+   <input type="button" id="o" value="1" class="one"   onclick="myFunction(this,1)">
+   <input type="button" id="o" value="2" class="two"   onclick="myFunction(this,2)">
+   <input type="button" id="o" value="3" class="three" onclick="myFunction(this,3)">
+   <input type="button" id="o" value="4" class="four"  onclick="myFunction(this,4)">
+   <input type="button" id="o" value="5" class="five"  onclick="myFunction(this,5)">
+ 
+  </div>
+
+  <input type="button" value="Submit" onclick="Validate()">
+ </div>
+  
+ <div class="containerThank" id="container2">
+  <div class="ThanksLogo"> </div>
+   <div id=NbrStar> </div>
+  <div class="textThank">
+   <p>
+     <h1> Thank  You! </h1>
+      We appreciate you taking the time to give a rating !
+      <br>if you ever need more support. don't hesitate to get in touch !
+   </p>
+  </div>
+  
+
+
+
+</div>
+ 
+
+
+ <script>
+    let x=0 ;
+ function myFunction(element, number){
+  element.style.backgroundColor = "grey";
+  element.style.color="white";
+   x=number;
+  }
+
+  function Validate(){
+    document.getElementById("container1").style.display="none";
+    document.getElementById("container2").style.display="block";
+    document.getElementById("NbrStar").innerHTML = "You Selected  "+x+ "  Out of 5"; 
+    
+  }
+</script>
+
+ 
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Afifa</a>.
+  </div>
+</body>
+</html>
