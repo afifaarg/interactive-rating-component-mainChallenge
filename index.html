@@ -14,32 +14,33 @@
 <body>
 
  <div class="container" id="container1">
-   <div class="starLogo"> </div>
+   <div class="starLogo"> <img src="./images/icon-star.svg" alt=""></div>
    <div class="text">
+    <h1> How did we do ?</h1>
     <p>
-      <h1> How did we do ?</h1>
        Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering !
     </p>
    </div>
    
-   <div class="rates">
-   <input type="button" id="o" value="1" class="one"   onclick="myFunction(this,1)">
-   <input type="button" id="o" value="2" class="two"   onclick="myFunction(this,2)">
-   <input type="button" id="o" value="3" class="three" onclick="myFunction(this,3)">
-   <input type="button" id="o" value="4" class="four"  onclick="myFunction(this,4)">
-   <input type="button" id="o" value="5" class="five"  onclick="myFunction(this,5)">
- 
-  </div>
+  <div class="rates">
 
-  <input type="button" value="Submit" onclick="Validate()">
+     <input type="button" id="o" value="1" class="rate">
+     <input type="button" id="o" value="2" class="rate">
+     <input type="button" id="o" value="3" class="rate">
+     <input type="button" id="o" value="4" class="rate">
+     <input type="button" id="o" value="5" class="rate">
+
+  </div>
+  
+  <input  class="subBtn" type="button" value="Submit">
  </div>
   
  <div class="containerThank" id="container2">
-  <div class="ThanksLogo"> </div>
+  <div class="ThanksLogo"> <img src="./images/illustration-thank-you.svg" alt=""> </div>
    <div id=NbrStar> </div>
   <div class="textThank">
+    <h1> Thank  You! </h1>
    <p>
-     <h1> Thank  You! </h1>
       We appreciate you taking the time to give a rating !
       <br>if you ever need more support. don't hesitate to get in touch !
    </p>
@@ -52,21 +53,7 @@
  
 
 
- <script>
-    let x=0 ;
- function myFunction(element, number){
-  element.style.backgroundColor = "grey";
-  element.style.color="white";
-   x=number;
-  }
-
-  function Validate(){
-    document.getElementById("container1").style.display="none";
-    document.getElementById("container2").style.display="block";
-    document.getElementById("NbrStar").innerHTML = "You Selected  "+x+ "  Out of 5"; 
-    
-  }
-</script>
+ <script src="index.js"></script>
 
  
   <div class="attribution">
